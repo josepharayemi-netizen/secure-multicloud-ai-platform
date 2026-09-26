@@ -31,7 +31,7 @@ jobs:
           scan-type: fs
           severity: CRITICAL,HIGH
           exit-code: "1"
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: software-bill-of-materials
           path: sbom.cdx.json
