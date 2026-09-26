@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: secure-ai-platform
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/josepharayemi-netizen/secure-multicloud-ai-platform.git
+    targetRevision: main
+    path: deploy/helm
+    helm:
+      valueFiles: [values.yaml]
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: secure-ai
+  syncPolicy:
+    automated: {prune: true, selfHeal: true}
+    syncOptions: [CreateNamespace=true]

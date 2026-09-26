@@ -1,0 +1,12 @@
+replicaCount: 2
+image:
+  repository: ghcr.io/josepharayemi-netizen/secure-multicloud-ai-platform
+  tag: latest
+resources:
+  requests: {cpu: 100m, memory: 192Mi}
+  limits: {cpu: 500m, memory: 512Mi}
+autoscaling:
+  enabled: true
+  minReplicas: 2
+  maxReplicas: 10
+  targetCPUUtilizationPercentage: 65
