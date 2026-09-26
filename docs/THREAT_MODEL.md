@@ -17,7 +17,7 @@ Model artifacts, training data, inference inputs, cloud identities, container im
 | Threat | Control |
 |---|---|
 | Stolen deployment credential | GitHub OIDC and short-lived workload identity |
-| Malicious dependency or image | Locked dependencies, Trivy, SBOM, provenance and signing |
+| Malicious dependency or image | Locked dependencies, Trivy, SBOM and provenance attestation |
 | Privileged container escape | Non-root UID, dropped capabilities, seccomp and read-only filesystem |
 | Lateral movement | Default-deny NetworkPolicy and dedicated namespace |
 | Model replacement | Immutable registry tags, artifact digest and controlled GitOps promotion |

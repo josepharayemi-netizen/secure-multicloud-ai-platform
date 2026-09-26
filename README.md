@@ -7,7 +7,7 @@ An enterprise-grade reference platform demonstrating how to train, package, secu
 
 ## Why this project matters
 
-Most portfolio projects stop at a notebook or API. This repository demonstrates the wider production system expected from a Secure AI/Data Platform Architect: reproducible ML, container delivery, Kubernetes, GitOps, infrastructure as code, telemetry, policy enforcement, signed artifacts, incident response, disaster recovery, and cost awareness.
+Most portfolio projects stop at a notebook or API. This repository demonstrates the wider production system expected from a Secure AI/Data Platform Architect: reproducible ML, container delivery, Kubernetes, GitOps, infrastructure as code, telemetry, policy enforcement, attested artifacts, incident response, disaster recovery, and cost awareness.
 
 ## Architecture
 
